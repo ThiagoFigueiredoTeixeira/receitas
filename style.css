@@ -1,0 +1,130 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(0.5rem, 0.5vw + 0.2rem, 1.2rem);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+:root {
+  --primary: #0055ff;
+  --secondary: #ff5500;
+  --text: #222;
+  --bg: #fff;
+  --radius: 0.5rem;
+}
+
+
+/*FIM RESET CSS*/
+
+/*# Colors
+
+- White: hsl(0, 0%, 100%)
+
+- Stone 100: hsl(30, 54%, 90%)
+- Stone 150: hsl(30, 18%, 87%)
+- Stone 600: hsl(30, 10%, 34%)
+- Stone 900: hsl(24, 5%, 18%)
+
+- Brown 800: hsl(14, 45%, 36%)
+
+- Rose 800: hsl(332, 51%, 32%)
+- Rose 50: hsl(330, 100%, 98%)
+*/
+
+
+
+/*FONTES*/
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Young';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+
+/*ESTILIZAÇAO*/
+
+body{
+    background-color:hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Young';
+   }
+
+.caixa{
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: clamp(38rem, 20vw + 10rem, 50rem);
+  
+   
+}
+
+.panqueca{
+  border-radius: 1rem;
+}
+
+h1{
+  padding: 1.7rem 0;
+}
+
+h4{
+  font-family: 'Outfit';
+  font-size: 1rem;
+}
